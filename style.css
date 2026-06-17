@@ -1,0 +1,21 @@
+body
+{
+    background: rgb(233, 190, 165);
+    overflow: hidden;
+    margin: 0px;
+}
+
+.frame
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 10px
+    display: flex;
+}
+
+.main
+{
+    background: white;
+    width: 100%;
+    height: 100%;
+}
