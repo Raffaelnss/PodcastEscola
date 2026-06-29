@@ -1,12 +1,17 @@
-const bg = Math.random() - 0.5;
-const wait = 60;
-let tick = 0;
+const bg = Math.random() * 10 - 5;
+const wait = 50;
+const moveX = Math.cos(bg); 
+const moveY = Math.sin(bg); 
+let currentX = 0;
+let currentY = 0;
 
-while(true)
-{
-    if(tick > wait)
-    {
-        document.body.style.backgroundPositionX += Math.cos(bg);
-        document.body.style.backgroundPositionY += Math.sen(bg);
-    }
+function move() {
+    // Move 1 pixel per interval
+    currentX += moveX; 
+    currentY += moveY; 
+    
+    // Update background position
+    document.body.style.backgroundPosition = currentX + "px " + currentY + "px";
 }
+
+setInterval("move()", wait);
