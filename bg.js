@@ -1,5 +1,5 @@
 const bg = Math.random() - 0.5;
-const wait = 5;
+const wait = 60;
 let tick = 0;
 
 while(true)
